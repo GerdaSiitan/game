@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#play-again-btn {
+    font-size: 40px;
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 0 8px; /* Adjust margin to separate buttons */
+    transition-timing-function: ease-in-out;
+}
+
+#play-again-btn {
+    background-color: #727e72;
+}
+
+#play-again-btn:hover {
+    background-color: #296d2d; /* Darker Green */
+}

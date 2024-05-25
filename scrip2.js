@@ -14,7 +14,6 @@ const scoreSection = document.querySelector(".score");
 const correctSpan = scoreSection.querySelector(".correct");
 const totalSpan = scoreSection.querySelector(".total");
 const resetBtn = scoreSection.querySelector("#reset-btn");
-const playAgainBtn = scoreSection.querySelector("#play-again-btn");
 const draggableItems = document.querySelector(".draggable-items");
 const matchingPairs = document.querySelector(".matching-pairs");
 
@@ -118,11 +117,6 @@ function drop(event) {
     draggableElement.setAttribute("draggable", "true");
 
     updateScore(); // Update score in the UI
-
-    if (correct === total) { // If all pairs are correctly matched
-        playAgainBtn.style.display = "block";
-        playAgainBtn.classList.add("play-again-btn-entrance");
-    }
 }
 
 function updateScore() {
@@ -134,3 +128,6 @@ function updateScore() {
 resetBtn.addEventListener("click", () => {
     initiateGame(); // Re-initialize the game
 });
+
+// Start the game for the first time
+initiateGame();

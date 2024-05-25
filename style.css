@@ -77,7 +77,8 @@ body {
     border-color: red;
 }
 
-#play-again-btn {
+#play-again-btn,
+#reset-btn {
     font-size: 18px;
     padding: 12px 24px; /* Adjust the padding to increase button size */
     background-color: #4CAF50; /* Green */
@@ -93,14 +94,15 @@ body {
     transition-timing-function: ease-in-out;
 }
 
-#play-again-btn:hover {
+#play-again-btn:hover,
+#reset-btn:hover {
     background-color: #45a049; /* Darker Green */
 }
 
 #reset-btn {
     font-size: 18px;
     padding: 12px 24px; /* Adjust the padding to increase button size */
-    background-color: #5e5e5e; /* Gray */
+    background-color: #7a7a7a; /* Gray */
     border: none;
     color: white;
     text-align: center;
@@ -114,7 +116,7 @@ body {
 }
 
 #reset-btn:hover {
-    background-color: #eb3232; /* Darker Gray */
+    background-color: #a02727; /* Darker Gray */
 }
 
 

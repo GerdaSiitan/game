@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drag and Drop Game</title>
+</head>
+<body>
+    <div class="score">
+        <span class="correct">0</span>/<span class="total">8</span>
+        <button id="reset-btn">Reset</button>
+        <button id="play-again-btn" style="display:none;">Next Level</button>
+    </div>
+    <div class="game-container">
+        <div class="draggable-items"></div>
+        <div class="camera-image">
+            <img src="pilt2.jpg" alt="Camera Image">
+        </div>
+        <div class="matching-pairs">
+            <div class="droppable" data-part="viewfinder" data-number="1"></div>
+            <div class="droppable" data-part="screen" data-number="2"></div>
+            <div class="droppable" data-part="shutter-speed" data-number="3"></div>
+            <div class="droppable" data-part="af-mf" data-number="4"></div>
+            <div class="droppable" data-part="control-wheel" data-number="5"></div>
+            <div class="droppable" data-part="camera-roll" data-number="6"></div>
+            <div class="droppable" data-part="delete-button" data-number="7"></div>
+            <div class="droppable" data-part="menu-button" data-number="8"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

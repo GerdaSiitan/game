@@ -11,6 +11,8 @@ body {
 .score {
     margin-bottom: 20px;
     font-size: 24px;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
 }
 
 .game-container {
@@ -116,7 +118,7 @@ body {
 }
 
 #reset-btn:hover {
-    background-color: #a02727; /* Darker Gray */
+    background-color: #a02727;
 }
 
 

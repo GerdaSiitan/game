@@ -13,6 +13,7 @@ const cameraParts = [
 const scoreSection = document.querySelector(".score");
 const correctSpan = scoreSection.querySelector(".correct");
 const totalSpan = scoreSection.querySelector(".total");
+const playAgainBtn = scoreSection.querySelector("#play-again-btn");
 const resetBtn = scoreSection.querySelector("#reset-btn");
 const draggableItems = document.querySelector(".draggable-items");
 const matchingPairs = document.querySelector(".matching-pairs");
@@ -117,6 +118,11 @@ function drop(event) {
     draggableElement.setAttribute("draggable", "true");
 
     updateScore(); // Update score in the UI
+
+    if (correct === total) { // If all pairs are correctly matched
+        playAgainBtn.style.display = "block";
+        playAgainBtn.classList.add("play-again-btn-entrance");
+    }
 }
 
 function updateScore() {
@@ -124,6 +130,11 @@ function updateScore() {
     totalSpan.textContent = total;
     scoreSection.style.opacity = 1;
 }
+
+playAgainBtn.addEventListener("click", () => {
+    // Redirect to the next level page
+    window.location.href = "lastpage.html";
+});
 
 resetBtn.addEventListener("click", () => {
     initiateGame(); // Re-initialize the game

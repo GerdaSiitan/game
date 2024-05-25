@@ -77,25 +77,10 @@ body {
     border-color: red;
 }
 
-.score {
-    margin-bottom: 20px;
-    font-size: 24px;
-    display: flex;
-    align-items: center; /* Align items vertically in the center */
-}
-
-#reset-btn {
-    background-color: #757575; /* Gray */
-}
-
-#reset-btn:hover {
-    background-color: #eb3232; /* Darker Gray */
-}
-
-
-#play-again-btn, #reset-btn {
+#play-again-btn {
     font-size: 18px;
-    padding: 12px 24px;
+    padding: 12px 24px; /* Adjust the padding to increase button size */
+    background-color: #4CAF50; /* Green */
     border: none;
     color: white;
     text-align: center;
@@ -104,17 +89,34 @@ body {
     border-radius: 8px;
     transition-duration: 0.4s;
     cursor: pointer;
-    margin: 0 8px; /* Adjust margin to separate buttons */
+    margin: 4px 2px;
     transition-timing-function: ease-in-out;
-}
-
-#play-again-btn {
-    background-color: #4CAF50; /* Green */
 }
 
 #play-again-btn:hover {
     background-color: #45a049; /* Darker Green */
 }
+
+#reset-btn {
+    font-size: 18px;
+    padding: 12px 24px; /* Adjust the padding to increase button size */
+    background-color: #5e5e5e; /* Gray */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 4px 2px;
+    transition-timing-function: ease-in-out;
+}
+
+#reset-btn:hover {
+    background-color: #eb3232; /* Darker Gray */
+}
+
 
 
 @keyframes fadeIn {

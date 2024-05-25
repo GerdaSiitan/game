@@ -7,6 +7,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    transition: all .6s ease-in;
 }
 
 #play-again-btn {
